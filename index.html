@@ -12,59 +12,34 @@
 	<p>Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/</p>
 <h2>Reminder</h2>
 	<p>Press minus + shift + s and return to chop/fold long lines!</p>
-
-Show folder content: ls -la
-
+	<p>Show folder content: ls -la</p>
 <h2>Notes</h2>
-Do not put (external) dependencies in version control!
-
+	<p>Do not put (external) dependencies in version control!</p>
 <h2>Setup</h2>
-See where Git is located: which git
-
-Get the version of Git: git --version
-
-Create an alias (shortcut) for git status: git config --global alias.st status
-
-Help: git help
-
+	<p>See where Git is located: which git</p>
+	<p>Get the version of Git: git --version</p>
+	<p>Create an alias (shortcut) for git status: git config --global alias.st status</p>
+	<p>Help: git help</p>
 <h2>General</h2>
-Initialize Git: git init
-
-Get everything ready to commit: git add .
-
-Get custom file ready to commit: git add index.html
-
-Commit changes: git commit -m "Message"
-
-Commit changes with title and description: git commit -m "Title" -m "Description..."
-
-Add and commit in one step: git commit -am "Message"
-
-Remove files from Git: git rm index.html
-
-Update all changes: git add -u
-
-Remove file but do not track anymore: git rm --cached index.html
-
-Move or rename files: git mv index.html dir/index_new.html
-
-Undo modifications (restore files from latest commited version): git checkout -- index.html
-
-Restore file from a custom commit (in current branch): git checkout 6eb715d -- index.html
-
+	<p>Initialize Git: git init</p>
+	<p>Get everything ready to commit: git add .</p>
+	<p>Get custom file ready to commit: git add index.html</p>
+	<p>Commit changes: git commit -m "Message"</p>
+	<p>Commit changes with title and description: git commit -m "Title" -m "Description..."</p>
+	<p>Add and commit in one step: git commit -am "Message"</p>
+	<p>Remove files from Git: git rm index.html</p>
+	<p>Update all changes: git add -u</p>
+	<p>Remove file but do not track anymore: git rm --cached index.html</p>
+	<p>Move or rename files: git mv index.html dir/index_new.html</p>
+	<p>Undo modifications (restore files from latest commited version): git checkout -- index.html</p>
+	<p>Restore file from a custom commit (in current branch): git checkout 6eb715d -- index.html</p>
 <h2>Reset</h2>
-Go back to commit: git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6
-
-Soft reset (move HEAD only; neither staging nor working dir is changed): git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6
-
-Undo latest commit: git reset --soft HEAD~
-
-Mixed reset (move HEAD and change staging to match repo; does not affect working dir): git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6
-
-Hard reset (move HEAD and change staging dir and working dir to match repo): git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6
-
-Hard reset of a single file (@ is short for HEAD): git checkout @ -- index.html
-
+	<p>Go back to commit: git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6</p>
+	<p>Soft reset (move HEAD only; neither staging nor working dir is changed): git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6</p>
+	<p>Undo latest commit: git reset --soft HEAD~</p>
+	<p>Mixed reset (move HEAD and change staging to match repo; does not affect working dir): git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6</p>
+	<p>Hard reset (move HEAD and change staging dir and working dir to match repo): git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6</p>
+	<p>Hard reset of a single file (@ is short for HEAD): git checkout @ -- index.html</p>
 <h2>Update & Delete</h2>
 Test-Delete untracked files: git clean -n
 
