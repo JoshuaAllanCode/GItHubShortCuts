@@ -67,58 +67,33 @@
 	<p>Squash multiple commits into one: git rebase -i HEAD~3 (source)</p>
 	<p>Squash-merge a feature branch (as one commit): git merge --squash branchname (commit afterwards)</p>
 <h2>Stash</h2>
-Put in stash: git stash save "Message"
-
-Show stash: git stash list
-
-Show stash stats: git stash show stash@{0}
-
-Show stash changes: git stash show -p stash@{0}
-
-Use custom stash item and drop it: git stash pop stash@{0}
-
-Use custom stash item and do not drop it: git stash apply stash@{0}
-
-Use custom stash item and index: git stash apply --index
-
-Create branch from stash: git stash branch new_branch
-
-Delete custom stash item: git stash drop stash@{0}
-
-Delete complete stash: git stash clear
-
+	<p>Put in stash: git stash save "Message"</p>
+	<p>Show stash: git stash list</p>
+	<p>Show stash stats: git stash show stash@{0}</p>
+	<p>Show stash changes: git stash show -p stash@{0}</p>
+	<p>Use custom stash item and drop it: git stash pop stash@{0}</p>
+	<p>Use custom stash item and do not drop it: git stash apply stash@{0}</p>
+	<p>Use custom stash item and index: git stash apply --index</p>
+	<p>Create branch from stash: git stash branch new_branch</p>
+	<p>Delete custom stash item: git stash drop stash@{0}</p>
+	<p>Delete complete stash: git stash clear</p>
 <h2>Gitignore & Gitkeep</h2>
 About: https://help.github.com/articles/ignoring-files
-
 Useful templates: https://github.com/github/gitignore
-
 Add or edit gitignore: nano .gitignore
-
 Track empty dir: touch dir/.gitkeep
-
 <h2>Log</h2>
 Show commits: git log
-
 Show oneline-summary of commits: git log --oneline
-
 Show oneline-summary of commits with full SHA-1: git log --format=oneline
-
 Show oneline-summary of the last three commits: git log --oneline -3
-
 Show only custom commits: git log --author="Sven" git log --grep="Message" git log --until=2013-01-01 git log --since=2013-01-01
-
 Show only custom data of commit: git log --format=short git log --format=full git log --format=fuller git log --format=email git log --format=raw
-
 Show changes: git log -p
-
 Show every commit since special commit for custom file only: git log 6eb715d.. index.html
-
 Show changes of every commit since special commit for custom file only: git log -p 6eb715d.. index.html
-
 Show stats and summary of commits: git log --stat --summary
-
 Show history of commits as graph: git log --graph
-
 Show history of commits as graph-summary: git log --oneline --graph --all --decorate
 <h2>Compare</h2>
 Compare modified files: git diff
