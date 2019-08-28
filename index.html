@@ -78,65 +78,65 @@
 	<p>Delete custom stash item: git stash drop stash@{0}</p>
 	<p>Delete complete stash: git stash clear</p>
 <h2>Gitignore & Gitkeep</h2>
-About: https://help.github.com/articles/ignoring-files
-Useful templates: https://github.com/github/gitignore
-Add or edit gitignore: nano .gitignore
-Track empty dir: touch dir/.gitkeep
+	<p>About: https://help.github.com/articles/ignoring-files</p>
+	<p>Useful templates: https://github.com/github/gitignore</p>
+	<p>Add or edit gitignore: nano .gitignore</p>
+	<p>Track empty dir: touch dir/.gitkeep</p>
 <h2>Log</h2>
-Show commits: git log
-Show oneline-summary of commits: git log --oneline
-Show oneline-summary of commits with full SHA-1: git log --format=oneline
-Show oneline-summary of the last three commits: git log --oneline -3
-Show only custom commits: git log --author="Sven" git log --grep="Message" git log --until=2013-01-01 git log --since=2013-01-01
-Show only custom data of commit: git log --format=short git log --format=full git log --format=fuller git log --format=email git log --format=raw
-Show changes: git log -p
-Show every commit since special commit for custom file only: git log 6eb715d.. index.html
-Show changes of every commit since special commit for custom file only: git log -p 6eb715d.. index.html
-Show stats and summary of commits: git log --stat --summary
-Show history of commits as graph: git log --graph
-Show history of commits as graph-summary: git log --oneline --graph --all --decorate
+	<p>Show commits: git log</p>
+	<p>Show oneline-summary of commits: git log --oneline</p>
+	<p>Show oneline-summary of commits with full SHA-1: git log --format=oneline</p>
+	<p>Show oneline-summary of the last three commits: git log --oneline -3</p>
+	<p>Show only custom commits: git log --author="Sven" git log --grep="Message" git log --until=2013-01-01 git log --since=2013-01-01</p>
+	<p>Show only custom data of commit: git log --format=short git log --format=full git log --format=fuller git log --format=email git log --format=raw</p>
+	<p>Show changes: git log -p</p>
+	<p>Show every commit since special commit for custom file only: git log 6eb715d.. index.html</p>
+	<p>Show changes of every commit since special commit for custom file only: git log -p 6eb715d.. index.html</p>
+	<p>Show stats and summary of commits: git log --stat --summary</p>
+	<p>Show history of commits as graph: git log --graph</p>
+	<p>Show history of commits as graph-summary: git log --oneline --graph --all --decorate</p>
 <h2>Compare</h2>
-Compare modified files: git diff
-Compare modified files and highlight changes only: git diff --color-words index.html
-Compare modified files within the staging area: git diff --staged
-Compare branches: git diff master..branchname
-Compare branches like above: git diff --color-words master..branchname^
-Compare commits: git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f
-Compare commits of file: git diff 6eb715d index.html git diff 6eb715d..537a09f index.html
-Compare without caring about spaces: git diff -b 6eb715d..HEAD or: git diff --ignore-space-change 6eb715d..HEAD
-Compare without caring about all spaces: git diff -w 6eb715d..HEAD or: git diff --ignore-all-space 6eb715d..HEAD
-Useful comparings: git diff --stat --summary 6eb715d..HEAD
-Blame: git blame -L10,+1 index.html
+	<p>Compare modified files: git diff</p>
+	<p>Compare modified files and highlight changes only: git diff --color-words index.html</p>
+	<p>Compare modified files within the staging area: git diff --staged</p>
+	<p>Compare branches: git diff master..branchname</p>
+	<p>Compare branches like above: git diff --color-words master..branchname^</p>
+	<p>Compare commits: git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f</p>
+	<p>Compare commits of file: git diff 6eb715d index.html git diff 6eb715d..537a09f index.html</p>
+	<p>Compare without caring about spaces: git diff -b 6eb715d..HEAD or: git diff --ignore-space-change 6eb715d..HEAD</p>
+	<p>Compare without caring about all spaces: git diff -w 6eb715d..HEAD or: git diff --ignore-all-space 6eb715d..HEAD</p>
+	<p>Useful comparings: git diff --stat --summary 6eb715d..HEAD</p>
+	<p>Blame: git blame -L10,+1 index.html</p>
 <h2>Releases & Version Tags</h2>
-Show all released versions: git tag
-Show all released versions with comments: git tag -l -n1
-Create release version: git tag v1.0.0
-Create release version with comment: git tag -a v1.0.0 -m 'Message'
-Checkout a specific release version: git checkout v1.0.0
+	<p>Show all released versions: git tag</p>
+	<p>Show all released versions with comments: git tag -l -n1</p>
+	<p>Create release version: git tag v1.0.0</p>
+	<p>Create release version with comment: git tag -a v1.0.0 -m 'Message'</p>
+	<p>Checkout a specific release version: git checkout v1.0.0</p>
 <h2>Collaborate</h2>
-Show remote: git remote
-Show remote details: git remote -v
-Add remote upstream from GitHub project: git remote add upstream https://github.com/user/project.git
-Add remote upstream from existing empty project on server: git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git
-Fetch: git fetch upstream
-Fetch a custom branch: git fetch upstream branchname:local_branchname
-Merge fetched commits: git merge upstream/master
-Remove origin: git remote rm origin
-Show remote branches: git branch -r
-Show all branches (remote and local): git branch -a
-Create and checkout branch from a remote branch: git checkout -b local_branchname upstream/remote_branchname
-Compare: git diff origin/master..master
-Push (set default with -u): git push -u origin master
-Push: git push origin master
-Force-Push: `git push origin master --force
-Pull: git pull
-Pull specific branch: git pull origin branchname
-Fetch a pull request on GitHub by its ID and create a new branch: git fetch upstream pull/ID/head:new-pr-branch
-Clone to localhost: git clone https://github.com/user/project.git or: git clone ssh://user@domain.com/~/dir/.git
-Clone to localhost folder: git clone https://github.com/user/project.git ~/dir/folder
-Clone specific branch to localhost: git clone -b branchname https://github.com/user/project.git
-Clone with token authentication (in CI environment): git clone https://oauth2:<token>@gitlab.com/username/repo.git
-Delete remote branch (push nothing): git push origin :branchname or: git push origin --delete branchname
+	<p>Show remote: git remote</p>
+	<p>Show remote details: git remote -v</p>
+	<p>Add remote upstream from GitHub project: git remote add upstream https://github.com/user/project.git</p>
+	<p>Add remote upstream from existing empty project on server: git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git</p>
+	<p>Fetch: git fetch upstream</p>
+	<p>Fetch a custom branch: git fetch upstream branchname:local_branchname</p>
+	<p>Merge fetched commits: git merge upstream/master</p>
+	<p>Remove origin: git remote rm origin</p>
+	<p>Show remote branches: git branch -r</p>
+	<p>Show all branches (remote and local): git branch -a</p>
+	<p>Create and checkout branch from a remote branch: git checkout -b local_branchname upstream/remote_branchname</p>
+	<p>Compare: git diff origin/master..master</p>
+	<p>Push (set default with -u): git push -u origin master</p>
+	<p>Push: git push origin master</p>
+<p>Force-Push: `git push origin master --force
+<p>Pull: git pull
+<p>Pull specific branch: git pull origin branchname
+<p>Fetch a pull request on GitHub by its ID and create a new branch: git fetch upstream pull/ID/head:new-pr-branch
+<p>Clone to localhost: git clone https://github.com/user/project.git or: git clone ssh://user@domain.com/~/dir/.git
+<p>Clone to localhost folder: git clone https://github.com/user/project.git ~/dir/folder
+<p>Clone specific branch to localhost: git clone -b branchname https://github.com/user/project.git
+<p>Clone with token authentication (in CI environment): git clone https://oauth2:<token>@gitlab.com/username/repo.git
+<p>Delete remote branch (push nothing): git push origin :branchname or: git push origin --delete branchname
 <h2>Archive</h2>
 Create a zip-archive: git archive --format zip --output filename.zip master
 Export/write custom log to a file: git log --author=sven --all > log.txt
