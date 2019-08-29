@@ -128,25 +128,25 @@
 	<p>Compare: git diff origin/master..master</p>
 	<p>Push (set default with -u): git push -u origin master</p>
 	<p>Push: git push origin master</p>
-<p>Force-Push: `git push origin master --force
-<p>Pull: git pull
-<p>Pull specific branch: git pull origin branchname
-<p>Fetch a pull request on GitHub by its ID and create a new branch: git fetch upstream pull/ID/head:new-pr-branch
-<p>Clone to localhost: git clone https://github.com/user/project.git or: git clone ssh://user@domain.com/~/dir/.git
-<p>Clone to localhost folder: git clone https://github.com/user/project.git ~/dir/folder
-<p>Clone specific branch to localhost: git clone -b branchname https://github.com/user/project.git
-<p>Clone with token authentication (in CI environment): git clone https://oauth2:<token>@gitlab.com/username/repo.git
-<p>Delete remote branch (push nothing): git push origin :branchname or: git push origin --delete branchname
+	<p>Force-Push: `git push origin master --force</p>
+	<p>Pull: git pull</p>
+	<p>Pull specific branch: git pull origin branchname</p>
+	<p>Fetch a pull request on GitHub by its ID and create a new branch: git fetch upstream pull/ID/head:new-pr-branch</p>
+	<p>Clone to localhost: git clone https://github.com/user/project.git or: git clone ssh://user@domain.com/~/dir/.git</p>
+	<p>Clone to localhost folder: git clone https://github.com/user/project.git ~/dir/folder</p>
+	<p>Clone specific branch to localhost: git clone -b branchname https://github.com/user/project.git</p>
+	<p>Clone with token authentication (in CI environment): git clone https://oauth2:<token>@gitlab.com/username/repo.git</p>
+	<p>Delete remote branch (push nothing): git push origin :branchname or: git push origin --delete branchname</p>
 <h2>Archive</h2>
-Create a zip-archive: git archive --format zip --output filename.zip master
-Export/write custom log to a file: git log --author=sven --all > log.txt
+	<p>Create a zip-archive: git archive --format zip --output filename.zip master</p>
+	<p>Export/write custom log to a file: git log --author=sven --all > log.txt</p>
 <h2>Troubleshooting</h2>
-Ignore files that have already been committed to a Git repository: http://stackoverflow.com/a/1139797/1815847
+	<p>Ignore files that have already been committed to a Git repository: http://stackoverflow.com/a/1139797/1815847</p>
 <h2>Security</h2>
-Hide Git on the web via .htaccess: RedirectMatch 404 /\.git (more info here: http://stackoverflow.com/a/17916515/1815847)
+	<p>Hide Git on the web via .htaccess: RedirectMatch 404 /\.git (more info here: http://stackoverflow.com/a/17916515/1815847)</p>
 <h2>Large File Storage</h2>
-Website: https://git-lfs.github.com/
-Install: brew install git-lfs
-Track *.psd files: git lfs track "*.psd" (init, add, commit and push as written above)
+	<p>Website: https://git-lfs.github.com/</p>
+	<p>Install: brew install git-lfs</p>
+	<p>Track *.psd files: git lfs track "*.psd" (init, add, commit and push as written above)</p>
 </body>
 </html>
